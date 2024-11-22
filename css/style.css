@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "lato", sans-serif;
+    animation: popup;
+    animation-duration: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.primary-nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    background: rgb(247, 247, 247);
+    padding: 12px 40px;
+    z-index: 3;
+}
+
+.first-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo a, .icon {
+    font-size: 150%;
+    color: black;
+}
+
+.ul-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 110%;
+}
+
+.ul-nav a {
+    color: black;
+}
+
+.li-nav-button a,.boeken-button a {
+    display: flex;
+    background: rgb(60, 60, 255);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 25px;
+    color: white;
+    transition: 0.2s all;
+}
+
+.li-nav-button a:hover,.boeken-button a:hover {
+    background: rgb(38, 38, 143);
+}
+
+.button-icon {
+    font-size: 160%;
+    background: transparent;
+    border: none;
+    color: black;
+    display: none;
+}
+
+.button-icon:hover {
+    cursor: pointer;
+}
+
+.header-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header-section img,
+.text-section img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.header-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: black;
+    width: 42vw;
+    font-size: 180%;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.video-section {
+    height: 70vh;
+}
+
+.first-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-section {
+    height: 100vh;
+    display: flex;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.text-section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    width: 40ch;
+    font-size: 150%;
+    padding-left: 40px;
+}
+
+.text-section-div p {
+    font-weight: 300;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.card {
+    list-style: none;
+    width: 40%;
+    padding: 40px;
+}
+
+.card header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(215, 215, 215);
+    border-right: 1px solid rgb(215, 215, 215);
+    border-left: 1px solid rgb(215, 215, 215);
+}
+
+.card header h2 {
+    color: black;
+    font-size: 230%;
+}
+
+.card section {
+    height: 50vh;
+}
+
+.card footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    border-right: 1px solid rgb(215, 215, 215);
+    border-left: 1px solid rgb(215, 215, 215);
+}
+
+.card footer h3 {
+    font-size: 240%;
+}
+
+.card footer a {
+    font-size: 120%;
+}
+
+.section--borabora {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/bora\ bora.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section--griekenland {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/griekenland.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section--thailand {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/thailand.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section--thailand {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/thailand.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section--zanibar {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/zanibar.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header-section-twee img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.contact-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.75);
+    width: 30vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+textarea {
+    font-size: 100%;
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background: black;
+    border: none;
+    width: 200px;
+    color: white;
+
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.blog-header img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    position: relative;
+}
+
+.blog-header-text {
+    position: absolute;
+    bottom: 0;
+    padding: 40px;
+    font-size: 180%;
+    width: 40%;
+}
+
+.blog-header-text p{
+    font-weight: 300;
+}
+
+.information-section {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.information-section div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 140%;
+    gap: 20px;
+}
+
+.information-section ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    gap: 10px;
+    list-style: decimal;
+}
+
+.footer {
+    height: 160px;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    background: #2c2e33;
+    color: white;
+    display: flex;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-section img {
+        width: 100%;
+        position: relative;
+    }
+
+    .header-div {
+        position: absolute;
+        width: 80%;
+        z-index: 1;
+        bottom: 0;
+        font-size: 130%;
+        padding-bottom: 40px;
+        gap: 10px;
+        color: white;
+    }
+
+    .text-section {
+        flex-direction: column;
+        width: 100%;
+        font-size: 80%;
+        height: auto;
+    }
+
+    .text-section-div {
+        width: 100%;
+        padding-right: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text-section img {
+        width: 100%;
+        height: 50vh;
+        order: 2;
+    }
+
+    .video-section{
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .blog-header-text{
+        width: 100%;
+    }
+
+    .contact-section{
+        justify-content: normal;
+        padding: 200px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .contact-section{
+        padding: 80px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .li-nav {
+        display: none;
+    }
+
+    .button-icon {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contact-section{
+        padding-top: 180px;
+    }
+    .icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .li-nav-button{
+        display: none;
+    }
+    .logo,.button-icon{
+        font-size: 120%;
+    }
+}
+
+
+@keyframes popup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
